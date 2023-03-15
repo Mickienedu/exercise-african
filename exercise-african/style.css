@@ -1,0 +1,394 @@
+body {
+     background-color: white;
+} 
+/* @media screen and (max-width:800px) {
+    body{
+        text-align: center;
+        background-color: white;
+    }
+    *{
+        text-align: center;
+        font-weight: bold;
+        color: black;
+    }
+
+} */
+
+header {
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: darkslategrey;
+    position: fixed;
+}
+
+/* the website name and the african map */
+.heading {
+    display: flex;
+    padding: 2px;
+    /* box-shadow: h-offset v-offset blur spread color; represented by 5px 10px 10px 10px and the color */
+    box-shadow: 5px 10px 10px 10px white;
+}
+
+/* the website name */
+.heading h1 {
+    text-transform: uppercase;
+    color: whitesmoke;
+}
+
+/* the african map */
+.map {
+    width: 60px;
+    height: 60px;
+    margin-top: 0.70rem;
+    border-radius: 20px;
+}
+
+/* the navigation links */
+.lists {
+    display: flex;
+    gap: 4rem;
+    list-style: none;
+    font-size: 20px;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+/* navigation links for underline remover and color */
+.lists a {
+    color: white;
+    text-decoration: none;
+}
+
+.welcome {
+    margin-top: 5rem;
+    text-align: center;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+.welcome h3,
+h4 {
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+#dropdown {
+    border: none;
+    outline: none;
+    height: 30px;
+    border-radius: 10px;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+.list-option {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+
+#dropdown1 {
+    border-bottom: 2px solid darkred;
+    outline: none;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid;
+    padding: 3px;
+    /* box-shadow: h-offset v-offset blur spread color; represented by 5px 10px 10px 10px and the color */
+    box-shadow: 5px 10px 10px 10px rgb(231, 216, 134);
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+/* animation goes here */
+.welcome h4 {
+    color: brown;
+    font-weight: bold;
+    position: relative;
+    animation: mine 8s infinite;
+    border: 1px solid;
+    padding: 3px;
+    /* box-shadow: h-offset v-offset blur spread color; represented by 5px 10px 10px 10px and the color */
+    box-shadow: 5px 10px 10px 10px darkslategrey;
+}
+
+@keyframes mine {
+    0% {
+        margin-right: 300px;
+    }
+
+    25% {
+        margin-left: 0px;
+    }
+
+    50% {
+        margin-left: 300px;
+    }
+
+    100% {
+        margin-left: 0px;
+    }
+}
+
+/* img styling */
+.bg-img {
+    opacity: 20%;
+    position: fixed;
+    top: 15rem;
+    left: 42rem;
+    width: 30rem;
+}
+
+.img-container {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.image {
+    width: 200px;
+    border-radius: 15px;
+}
+
+#image {
+    width: 150px;
+}
+
+#ellen {
+    width: 200px;
+    height: 200px;
+}
+
+#senegal {
+    width: 200px;
+    height: 200px;
+}
+
+#achebe {
+    height: 220px;
+}
+
+/* about page starts here */
+.about {
+    margin-top: 7rem;
+    text-align: center;
+}
+
+#about-us {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    background-color: rgb(214, 228, 229);
+}
+
+.about-img-p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    line-height: 200%;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.african-map {
+    width: 400px;
+    border-radius: 20px;
+}
+
+#about-us p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* contact page starts */
+
+#contact-us {
+    margin-top: 5rem;
+    gap: 4rem;
+    background-color: rgb(253, 245, 245);
+}
+
+.contact-heading {
+    text-align: center;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+.contact-media {
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+    line-height: 2px;
+    font-size: large;
+}
+
+.ul-lists {
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+    line-height: 2px;
+    font-size: large;
+    list-style: none;
+}
+
+.ul-lists a {
+    text-decoration: none;
+}
+
+.input-space {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    gap: 4rem;
+}
+
+.input1 input {
+    height: 2rem;
+    width: 20rem;
+    outline: none;
+    border-radius: 8px;
+    border: 2px solid rgb(15, 14, 14);
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid;
+    padding: 3px;
+    /* box-shadow: h-offset v-offset blur spread color; represented by 5px 10px 10px 10px and the color */
+    box-shadow: 5px 10px 10px 10px rgb(231, 216, 134);
+}
+
+.text textarea {
+    height: 2rem;
+    width: 20rem;
+    border-radius: 8px;
+    border: 2px solid rgb(27, 26, 26);
+    outline: none;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid;
+    padding: 3px;
+    /* box-shadow: h-offset v-offset blur spread color; represented by 5px 10px 10px 10px and the color */
+    box-shadow: 5px 10px 10px 10px rgb(231, 216, 134);
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn1 {
+    width: 150px;
+    height: 35px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 100px;
+    border: 1px solid white;
+}
+
+/* footer styling starts here */
+footer {
+    background-color: darkolivegreen;
+}
+
+.subscribe {
+    margin-top: 5rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.subscribe h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.form-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0rem;
+}
+
+.form-input input {
+    height: 3rem;
+    width: 20rem;
+    border-radius: 2px;
+    outline: none;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid white;
+}
+
+.form-input button {
+    height: 3.35rem;
+    width: 9rem;
+    border-radius: 2px;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(244, 18, 18);
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 2px solid white;
+    cursor: pointer;
+}
+
+.footer-container {
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+    list-style: none;
+}
+
+/* .footer-container img{
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+} */
+.footer-container1 {
+    display: grid;
+    justify-content: center;
+    gap: 1rem;
+    color: white;
+    list-style: none;
+}
+
+.footer-container1 a {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.me {
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    color: wheat;
+    margin-bottom: -2rem;
+}
